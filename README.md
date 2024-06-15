@@ -11,8 +11,7 @@ Projekt gry Tetris został zrealizowany z użyciem języka C++ oraz biblioteki r
 * Dodatkowo tworzymy dodatkowe elementy wizualne takie jak napisy, czy też wyświetlanie następnego bloku np. DrawTextEx() - dzięki bibliotece raylib
 * Kontrola czasu dla stałego poruszania się bloku w dół - EventTrgiggered()
 2. game.cpp i game.h - najważniejsze pliki projektu - odpowiadają za działanie gry – zawarta jest między innymi logika poruszania, sprawdzanie kolizji, generowanie bloków. Ta część odpowiada również za rysowanie elementów rozgrywki metodą Draw() korzystając z analogicznych metod wykorzystywanych w innych częściach projektu (grid.cpp, block.cpp)
-Całość opiera się na klasie Game(), która zawiera swoje metody (opisane poniżej)
-Możemy wyróżnić kilka najważniejszych elementów:
+Całość opiera się na klasie Game(), która zawiera swoje metody (opisane poniżej). Możemy wyróżnić kilka najważniejszych elementów:
 * Kontrola poruszania za pomocą przycisków przez użytkownika. - HandleImput()
 * Kontrola poruszania się bloku (wychodzenie poza plaszne, rotacja bloków, kolizje) - IsBlockOutside(), RotateBlock(), BlockFits()
 * Generowanie nowego bloku po ustawieniu się poprzedniego na dole planszy – LockBlock()
